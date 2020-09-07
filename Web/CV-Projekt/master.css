@@ -1,53 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
 body {
-/* background: url(bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   width: 100%;
-  height: 100%;
-  */
-}
-.image {
-  width: 100%;
-  height: 100%;
-}
-.landing {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: fixed;
-}
-.heading {
+  height: 100vh;
   font-family: sans-serif;
-  font-size: 35px;
-  color: white;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-#subline {
-  font-family: sans-serif;
-  font-size: 22px;
-  color: white;
-  border-style: solid;
-  border-color: white;
-  border-radius: 30px;
-  background-color: transparent;
-  height: 35px;
-  width: 200px;
-  margin-top: 55px;
-  display: flex;
+.container{
+  width: 100%;
+  height: 100%;
+  /* Mjuk scrollning */
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.navbar {
   position: fixed;
-  align-items: center;
+  font-size: 25px;
+  bottom: 1px;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.navbar ul {
+  display: flex;
   justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+.navbar ul li {
+  margin: 0, 10px;
+  padding: 0.3rem;
+}
+.navbar ul li a {
+  color: white;
+  text-transform: uppercase;
 }
 
-.content {
-  display: flex;
+section {
+  width: 100%;
+  height: 100vh;
+}
+/* First section */
+.firstsec {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.firstsec h1 {
+  color: white;
+  font-size: 5rem;
+}
+.firstsec h2 {
+  color: white;
+  margin-top: -7px;
+  font-size: 2rem;
+}
+/*
+.firstsec h5 {
+  color: white;
+  top: 40.5%;
+  position: relative;
+}
+#downarrow {
+  width: 30px;
+  top: 41%;
+  position: relative;
+}
+*/
+.secondsec {
+  background-color: green;
+}
+/* Second section */
+.secondsec {
+  background-color: black;
+  color: white;
 }
