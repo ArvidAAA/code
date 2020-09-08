@@ -80,11 +80,23 @@ section {
   position: relative;
 }
 */
-.secondsec {
-  background-color: green;
-}
 /* Second section */
 .secondsec {
-  background-color: black;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  background-color: grey;
   color: white;
+}
+.about1 {
+  width: 50%;
+}
+#namn {
+  font-size: 40px;
+}
+.about2{
+  width: 50%;
+}
+.about2 img {
+  width: 300px;
 }
