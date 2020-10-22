@@ -26,3 +26,5 @@ print(minlista[2:])
 #Byta ut grejer i listan. Detta byter ut Banana mot BlackPear
 minlista[1] = "BlackPear"
 print(minlista)
+
+minlista.append = ("Hello")
