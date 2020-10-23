@@ -408,3 +408,4 @@
 [1015/100631.596:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Ett försök gjordes att använda en befintlig process. (0xc000010a)
 [1015/100652.653:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: Åtgärden har slutförts. (0x0)
 [1015/101220.021:ERROR:directory_reader_win.cc(43)] FindFirstFile: Det går inte att hitta sökvägen. (0x3)
+[1023/102933.669:ERROR:directory_reader_win.cc(43)] FindFirstFile: Det går inte att hitta sökvägen. (0x3)

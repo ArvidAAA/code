@@ -14,7 +14,7 @@
           <img src="img/creamplug.jpg" alt="[ERROR WITH LOADING THE ELEMENT CORRECTLY]">
         </div>
         <div id="downarrow" class="downarrow">
-          <a href="#info"><img src="img/downarrow.png" alt="[ERROR WITH LOADING THE ELEMENT CORRECTLY]"></a>
+          <a onclick="myFunction()" href="#info"><img src="img/downarrow.png" alt="[ERROR WITH LOADING THE ELEMENT CORRECTLY]"></a>
         </div>
     </section>
     <section id="info"class="info">
@@ -25,8 +25,17 @@
         <p id="rad3"><a href="https://www.CreamPlug.se">CreamPlug's hemsida</a></p>
         <p id="rad4"><a href="https://www.instagram.com/creamplug">CreamPlug's instagram.</a></p>
       </div>
-
     </section>
     </div>
   </body>
+  <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("downarrow");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+  </script>
 </html>

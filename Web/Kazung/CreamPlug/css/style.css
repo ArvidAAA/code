@@ -28,13 +28,14 @@ section {
 .logo {
   justify-content: center;
   text-align: center;
-  align-items: center;
+  align-items: end;
 }
 .logo img {
   width: 750px;
 }
 .downarrow {
-  /* INTE BRA GJORT, ville bara fortsätta */
+  position: absolute;
+  margin-top: 90vh;
 }
 .downarrow img {
   width: 100px;
