@@ -1,7 +1,16 @@
 #Created 2020-10-22
 #Inlämmingsuppgift moment04
 
+#Måste ha plotly installerat.
+import plotly.graph_objects as go
+import numpy
+import pandas as pd
+
+
 def uppgift1():
+    
+    lista = []
+    listahojd = []
     ########################################
     print("Inlämmningsuppgift moment04 a")
     print("Enheter i cm3")
@@ -13,6 +22,7 @@ def uppgift1():
     s1 = int(input("Ange basen på rektangeln: "))
     s2 = int(input("Ange höjden på rektangeln: "))
     
+
     #Area = b * h
     area = s1 * s2
     #Printar ut arean
@@ -25,10 +35,26 @@ def uppgift1():
 
     print("Volym exempel 1-10")
     for i in range(1, 11):
-        print(f"{i * s1 * s2} cm3")
-    
-    print('{:^10}'.format('Volym'))
+        h = listahojd.append(i)
+        p = int(i * s1 * s2)
+        lista.append(p)
 
+        
+    fig = go.Figure(data=[go.Table(
+        header=dict(values=['Höjden', 'Volymen'],
+                    line_color='darkslategray',
+                    fill_color='lightskyblue',
+                    align='left'),
+        cells=dict(values=[[listahojd], # 1st column
+                        [95, 85, 75, 95]], # 2nd column
+                line_color='darkslategray',
+                fill_color='lightcyan',
+                align='left'))
+    ])
+
+    fig.update_layout(width=500, height=300)
+    fig.show()
+    
 uppgift1()
 
 
