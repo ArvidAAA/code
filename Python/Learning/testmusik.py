@@ -10,8 +10,6 @@ def ljud():
     #Använder playsound modulen för att spela upp filen
     playsound(minljudfil)
 
-
-
 #Kör funktionen
 ljud()
 
