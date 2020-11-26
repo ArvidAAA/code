@@ -3,19 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Min Bootstrap Uppgift</title>
+    <!-- Symnbolen ⚛ från unicode -->
+    <title>⚛ Arvid Anderson ⚛</title>
     <!-- Bootstrap CSS och Min Egna CSS-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="bg-primary container-fluid text-white text-center arvid-margin arvid-padding">
+
+    <!-- navbaren -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <!-- Arvid Anderson loggan-->
+      <a class="navbar-brand" href="/index.html"><img src="/img/logo.png" alt=""></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#headers">Headers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#images">Images</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#responsive">Responsive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#classochid">Class & ID</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Första containern fluid headers-->
+    <div id="headers" class="bg-primary container-fluid text-white text-center arvid-padding">
         <h1>Element</h1>
         <p>"Element" är h1 tag i html, Denna h1 taggen är en av dom mest använda html elementen</p>
         <img src="https://neilpatel.com/wp-content/uploads/2017/03/image32-2.png" alt="ERROR LOADING">
     </div>
-    
-    <div class="bg-warning container-fluid text-white text-center ">
+    <!-- Andra containern fluid headers 1-6 exemple -->
+    <div class="bg-warning container-fluid text-white text-center arvid-padding">
         <h1>H1</h1>
         <h2>H2</h2>
         <h3>H3</h3>
@@ -23,6 +46,49 @@
         <h5>H5</h5>
         <h6>H6</h6>
         <p>Här ser du ett exempel på dom alla olika html headersen. Det finns h1 -> h6. </p>
+    </div>
+    <!-- Tredje containern fluid images -->
+    <div id="images" class="bg-success container-fluid text-white arvid-padding text-center">
+      <img src="https://www.betterthanpants.com/media/catalog/product/t/h/this-is-a-very-old-picture-of-me-tshirt-large.png" alt="">
+      <h3>IMG TAG</h3>
+      <p>Detta är img (bild) tag som också är väldigt vanlig i HTML. Bilder är något som används mycket inom webutveckling. Bilden ovanför i den gröna containern är inlagd via denna tagen</p>
+    </div>
+    <!--Fjärde container fluid responsiv-->
+    <div id="responsive" class="bg-danger container-fluid text-white arvid-padding text-center">
+      <h3>Vad är en responsiv sida?</h3>
+      <p>En responsiv sida använder sig utav i detta fallet media queries för att anpassa
+         hur sidan ska se ut på olika typer av enheter. Det är viktigt att anpassa sidan för så många olika enheter som möjligt detta,
+          för att alla som besöker sidan ska få en så bra upplevelse som möjligt. En av dom viktigaste sakerna med att göra en sida responsiv är att få den att fungera bra på mobiltelefoner.
+          Just ni använder vi oss utav Bootstrap som ska göra detta jobbet lättare för oss med redan massa för definerade media queries
+      </p>
+      <p>Om du klickar på länken nedan kan du se hur denna sidan skulle se ut på en enhet med höjden 400px och bredden 500px, du kan även resiza sidan om du vill</p>
+      <script type="text/javascript">
+        // POPUP ruta för att visa att designen är responsive
+        function newPopup(url) {
+          popupWindow = window.open(
+            // Inkluderar paramterar för width och height och lite annat
+            url,'popUpWindow','height=400,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+        }
+        </script>
+        <!--Länken inuti en paragraph-->
+        <p><a class="text-dark" href="JavaScript:newPopup('index.html');">Öppna sidan i ett litet fönster, (POPUP Window)</a></p>
+    </div>
+    <!--Två rutor row col-sm, class id och annan info-->
+    <div id="classochid" class="container-fluid">
+      <div class="row">
+        <div class="bg-info col-sm">
+          <h3>Class</h3>
+          <p>Class attributen i HTML används för att klassificera element. Flera olika element kan använda sig utav samma Class och därmed få samma te.x style via css. Man kan tänka det som att du grupperar element</p>
+        </div>
+        <div class="bg-primary col-sm">
+          <h3>ID</h3>
+          <p>ID atttributen I HTML används för att identifiera och styla ett element på sidan. ID måste vara unikt och ska bara användas på ett ställe tillskillnad från Class</p>
+        </div>
+        <div class="bg-warning col-sm">
+          <h3>Container-Fluid, Row och Col-SM</h3>
+          <p>Gissar att du precis läst om Class och ID? I dessa tre kolummner använder vi oss utav av Class. Det tre klasser som är viktigast här är container-fluid, row och col-sm samt. Dessa tre klasser tillsammans skapar dessa fina rutor</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
