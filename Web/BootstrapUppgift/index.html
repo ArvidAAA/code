@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Arvid Anderson TE19D">
+    <meta name="copyright" content="Kazung.se">
     <!-- Symnbolen ⚛ från unicode -->
     <title>⚛ Arvid Anderson ⚛</title>
     <!-- Bootstrap CSS och Min Egna CSS-->
@@ -14,7 +16,8 @@
     <!-- navbaren -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <!-- Arvid Anderson loggan-->
-      <a class="navbar-brand" href="/index.html"><img src="/img/logo.png" alt=""></a>
+      <!-- Behöver hjälp /img/logo.png -->
+      <a class="navbar-brand" href="/index.html"><img src="./img/logo.png" alt=""></a>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#headers">Headers</a>
@@ -26,10 +29,25 @@
           <a class="nav-link" href="#responsive">Responsive</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#classochid">Class & ID</a>
+          <a class="nav-link" href="#classid">Class & ID</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="JavaScript:newPopupSELK('img/boliverdankster.mp4');">SELK-BREWERY</a>
         </li>
       </ul>
+
+      
     </nav>
+    <!-- SELK BREWERY POP UP-->
+    <script type="text/javascript">
+      // POPUP ruta för att visa att designen är responsive
+      function newPopupSELK(url) {
+        popupWindow = window.open(
+          // Inkluderar paramterar för width och height och lite annat
+          url,'popUpWindow','height=970,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+      }
+      </script>
+
 
     <!-- Första containern fluid headers-->
     <div id="headers" class="bg-primary container-fluid text-white text-center arvid-padding">
@@ -67,14 +85,14 @@
         function newPopup(url) {
           popupWindow = window.open(
             // Inkluderar paramterar för width och height och lite annat
-            url,'popUpWindow','height=400,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+            url,'popUpWindow','height=400,width=750,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
         }
         </script>
         <!--Länken inuti en paragraph-->
         <p><a class="text-dark" href="JavaScript:newPopup('index.html');">Öppna sidan i ett litet fönster, (POPUP Window)</a></p>
     </div>
     <!--Två rutor row col-sm, class id och annan info-->
-    <div id="classochid" class="container-fluid">
+    <div id="classid" class="bg-dark container-fluid arvid-padding">
       <div class="row">
         <div class="bg-info col-sm">
           <h3>Class</h3>
@@ -90,6 +108,27 @@
         </div>
       </div>
     </div>
-    <!--TODO: Mer bilder, Mer länkar, kolla med bossen vad jag saknar!!-->
+    <div class="bg-success container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="https://hackernoon.com/images/pdNpXCdz7hYdjvghqFeCGCNGyAq1-6q23ymd.jpg" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>META, Vad är det?</h3>
+      <p>Meta är ett prefix i HTML, meta syns inte på sidan utan är något som påverkar hemsidans egenskaper. Meta ligger alltid inom HEAD! Metan kan tillexempel innehålla uppgifter till sökmotorerna, info om vem som skapat sidan, copyright, ladda om sidan efter ett visst antal sekunder mm  </p>
+    </div>
+    <div class="bg-danger container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="https://www.w3docs.com/uploads/media/default/0001/01/05edec364d34439f6bb0618ca44d38d5cb289954.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>[OL - Orderd List]</h3>
+      <p>Är en orderd list med nummer, tillskillnad från UL, se nedan</p>
+    </div>
+    <div class="bg-danger container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="https://codebridgeplus.com/wp-content/uploads/unordered-list-after-screenshot.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>[UL - Unorderd List]</h3>
+      <p>Är en unorderd lista utan nummer, bara punkter i detta fallet.</p>
+    </div>
+    <!--TODO: Mer bilder???, Mer länkar???, Meta??? OL??? kolla med Herman vad jag saknar!!  -->
+    <!-- Footer med copyright och kazung holdings dankero-->
+    <footer class="bg-dark page-footer">
+      <div class="footer-copyright text-center py-3 text-success">© 2020 Copyright: Arvid Anderson @
+        <a href="https://kazung.se/">Kazung Holdings AB</a>
+      </div>
+    </footer>
   </body>
 </html>
