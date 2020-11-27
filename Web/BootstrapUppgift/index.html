@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta prefixs-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Arvid Anderson TE19D">
@@ -12,18 +13,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <!-- navbaren -->
+    <!-- navbaren sticky/fixed -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <!-- Arvid Anderson loggan-->
       <!-- Behöver hjälp /img/logo.png -->
       <a class="navbar-brand" href="/index.html"><img src="./img/logo.png" alt=""></a>
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link" href="#html">HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#css">CSS</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#headers">Headers</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#images">Images</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#paragraphs">Paragraphs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#responsive">Responsive</a>
@@ -35,8 +44,6 @@
           <a class="nav-link" href="JavaScript:newPopupSELK('img/boliverdankster.mp4');">SELK-BREWERY</a>
         </li>
       </ul>
-
-      
     </nav>
     <!-- SELK BREWERY POP UP-->
     <script type="text/javascript">
@@ -47,31 +54,49 @@
           url,'popUpWindow','height=970,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
       }
       </script>
-
-
-    <!-- Första containern fluid headers-->
+    <!--  containern fluid what is html-->
+    <div id="html" style="background-color: orangered;" class="container-fluid text-white text-center arvid-padding">
+      <img style="width: 400px;" src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" alt="ERROR LOADING">
+      <h1>Vad är HTML?</h1>
+      <p><strong>HTML</strong> står för HyperText Markup Language. <strong>HTML</strong> är den grundläggande byggstenen på webben. Alla hemsidor använder sig av någon form av <strong>HTML</strong>. Det är <strong>HTML</strong> som utgör strukturen för hemsidor.</p>
+    </div>
+    <!-- container fluid what is css-->
+    <div id="css" style="background-color: slateblue;" class="container-fluid text-white text-center arvid-padding">
+      <img style="width: 200px;" src="https://kariselovuo.pro/ksprov1/wp-content/uploads/2018/02/css-logo-300x300.png" alt="ERROR LOADING">
+      <h1>Vad är CSS?</h1>
+      <p><strong>CSS</strong> står för Cascading Style Sheets. <strong>CSS</strong> är också en av dom grundläggande byggstenarna på webben. <strong>CSS</strong> är en stilmatt som är beronde av <strong>HTML</strong>. <strong>CSS</strong> används alltså för "styla" en sida. Få sidan att se bra ut!</p>
+    </div>    
+    <!--  containern fluid headers-->
     <div id="headers" class="bg-primary container-fluid text-white text-center arvid-padding">
+        <img src="https://neilpatel.com/wp-content/uploads/2017/03/image32-2.png" alt="ERROR LOADING">
         <h1>Element</h1>
         <p>"Element" är h1 tag i html, Denna h1 taggen är en av dom mest använda html elementen</p>
-        <img src="https://neilpatel.com/wp-content/uploads/2017/03/image32-2.png" alt="ERROR LOADING">
     </div>
-    <!-- Andra containern fluid headers 1-6 exemple -->
-    <div class="bg-warning container-fluid text-white text-center arvid-padding">
+    <!-- containern fluid headers 1-6 exemple -->
+    <div style="background-color: mediumpurple;" class="container-fluid text-white text-center arvid-padding">
         <h1>H1</h1>
         <h2>H2</h2>
         <h3>H3</h3>
         <h4>H4</h4>
         <h5>H5</h5>
         <h6>H6</h6>
-        <p>Här ser du ett exempel på dom alla olika html headersen. Det finns h1 -> h6. </p>
+        <p>Här ser du ett exempel på dom alla olika html headersen. Det finns h1 -> h6.
+          H2 rubriken är den mest vanliga att använda som underbrik
+        </p>
     </div>
-    <!-- Tredje containern fluid images -->
+    <!-- containern fluid images -->
     <div id="images" class="bg-success container-fluid text-white arvid-padding text-center">
       <img src="https://www.betterthanpants.com/media/catalog/product/t/h/this-is-a-very-old-picture-of-me-tshirt-large.png" alt="">
       <h3>IMG TAG</h3>
       <p>Detta är img (bild) tag som också är väldigt vanlig i HTML. Bilder är något som används mycket inom webutveckling. Bilden ovanför i den gröna containern är inlagd via denna tagen</p>
     </div>
-    <!--Fjärde container fluid responsiv-->
+    <!--  containern fluid parahraph-->
+    <div id="paragraphs" class="bg-primary container-fluid text-white arvid-padding text-center">
+      <img style="padding-bottom: 35px;" src="https://www.jqueryscript.net/images/Universal-Placeholder-Text-Lorem-Ipsum-Generator-getlorem.jpg" alt="">
+      <h3>Paragraph</h3>
+      <p>Denna texten du löser just nu ligger i HTML p taggen. P står för paragraph / paragraf. Detta är den du använder när du ska skriva innehållet i en te.x en artikel</p>
+    </div>
+    <!-- container fluid responsiv-->
     <div id="responsive" class="bg-danger container-fluid text-white arvid-padding text-center">
       <h3>Vad är en responsiv sida?</h3>
       <p>En responsiv sida använder sig utav i detta fallet media queries för att anpassa
@@ -92,8 +117,8 @@
         <p><a class="text-dark" href="JavaScript:newPopup('index.html');">Öppna sidan i ett litet fönster, (POPUP Window)</a></p>
     </div>
     <!--Två rutor row col-sm, class id och annan info-->
-    <div id="classid" class="bg-dark container-fluid arvid-padding">
-      <div class="row">
+    <div id="classid" style="background-color: lemonchiffon;" class="container-fluid">
+      <div class="row text-white">
         <div class="bg-info col-sm">
           <h3>Class</h3>
           <p>Class attributen i HTML används för att klassificera element. Flera olika element kan använda sig utav samma Class och därmed få samma te.x style via css. Man kan tänka det som att du grupperar element</p>
@@ -108,24 +133,39 @@
         </div>
       </div>
     </div>
+    <!-- Fluid container meta-->
     <div class="bg-success container-fluid text-center text-white arvid-padding">
       <img style="padding-bottom: 35px;" src="https://hackernoon.com/images/pdNpXCdz7hYdjvghqFeCGCNGyAq1-6q23ymd.jpg" alt="ERROR, IMG NOT LOADING CORRECTLY">
       <h3>META, Vad är det?</h3>
       <p>Meta är ett prefix i HTML, meta syns inte på sidan utan är något som påverkar hemsidans egenskaper. Meta ligger alltid inom HEAD! Metan kan tillexempel innehålla uppgifter till sökmotorerna, info om vem som skapat sidan, copyright, ladda om sidan efter ett visst antal sekunder mm  </p>
     </div>
+    <!-- Fluid container OL-->
     <div class="bg-danger container-fluid text-center text-white arvid-padding">
       <img style="padding-bottom: 35px;" src="https://www.w3docs.com/uploads/media/default/0001/01/05edec364d34439f6bb0618ca44d38d5cb289954.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
       <h3>[OL - Orderd List]</h3>
       <p>Är en orderd list med nummer, tillskillnad från UL, se nedan</p>
     </div>
-    <div class="bg-danger container-fluid text-center text-white arvid-padding">
+    <!-- Fluid container UL-->
+    <div style="background-color:lightskyblue" class="container-fluid text-center text-white arvid-padding">
       <img style="padding-bottom: 35px;" src="https://codebridgeplus.com/wp-content/uploads/unordered-list-after-screenshot.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
       <h3>[UL - Unorderd List]</h3>
       <p>Är en unorderd lista utan nummer, bara punkter i detta fallet.</p>
     </div>
+    <!-- fluid container HTTP-->
+    <div style="background-color: mediumseagreen" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="./img/http.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>Vad är HTTP?</h3>
+      <p><strong>HTTP</strong> står för Hypertext Transfer Protocol och är en typ av kommunikationsprotokoll. Detta protokoll använder port 80. Kort sagt det HTTP gör är att överföra hemsidan från webservern till din dator.</p>
+    </div>
+    <!-- fluid container HTTPS-->
+    <div style="background-color:mediumspringgreen" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="./img/https.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>Vad är HTTPS?</h3>
+      <p><strong>HTTPS</strong> står för Hypertext Transfer Protocol Secure och är också en typ av kommunikationsprotokoll. Detta protokoll använder port 443. <!-- COME BACK--></p>
+    </div>
     <!--TODO: Mer bilder???, Mer länkar???, Meta??? OL??? kolla med Herman vad jag saknar!!  -->
-    <!-- Footer med copyright och kazung holdings dankero-->
-    <footer class="bg-dark page-footer">
+    <!-- Footer med copyright och kazung holdings dsamt mitt namn, fixed-->
+    <footer class="bg-dark page-footer fixed-bottom">
       <div class="footer-copyright text-center py-3 text-success">© 2020 Copyright: Arvid Anderson @
         <a href="https://kazung.se/">Kazung Holdings AB</a>
       </div>
