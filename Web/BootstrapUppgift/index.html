@@ -16,6 +16,9 @@
     <!-- navbaren sticky/fixed -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <!-- Arvid Anderson loggan-->
+      <!--
+        Navbar har problem med responsive ness det är för många items i navbaren.
+      -->
       <!-- Behöver hjälp /img/logo.png -->
       <a class="navbar-brand" href="/index.html"><img src="./img/logo.png" alt=""></a>
       <ul class="navbar-nav">
@@ -39,6 +42,24 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#classid">Class & ID</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#http">HTTP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#https">HTTPS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#compresseddata">Komprimerad Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cdn">CDN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#flexboxogrid">Flexbox & Grid</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#codesnippets">Code Snippets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="JavaScript:newPopupSELK('img/boliverdankster.mp4');">SELK-BREWERY</a>
@@ -152,21 +173,78 @@
       <p>Är en unorderd lista utan nummer, bara punkter i detta fallet.</p>
     </div>
     <!-- fluid container HTTP-->
-    <div style="background-color: mediumseagreen" class="container-fluid text-center text-white arvid-padding">
+    <div id="http" style="background-color: mediumseagreen" class="container-fluid text-center text-white arvid-padding">
       <img style="padding-bottom: 35px;" src="./img/http.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
       <h3>Vad är HTTP?</h3>
       <p><strong>HTTP</strong> står för Hypertext Transfer Protocol och är en typ av kommunikationsprotokoll. Detta protokoll använder port 80. Kort sagt det HTTP gör är att överföra hemsidan från webservern till din dator.</p>
     </div>
     <!-- fluid container HTTPS-->
-    <div style="background-color:mediumspringgreen" class="container-fluid text-center text-white arvid-padding">
+    <div id="https" style="background-color:mediumspringgreen" class="container-fluid text-center text-white arvid-padding">
       <img style="padding-bottom: 35px;" src="./img/https.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
       <h3>Vad är HTTPS?</h3>
-      <p><strong>HTTPS</strong> står för Hypertext Transfer Protocol Secure och är också en typ av kommunikationsprotokoll. Detta protokoll använder port 443. <!-- COME BACK--></p>
+      <p><strong>HTTPS</strong> står för Hypertext Transfer Protocol Secure och är också en typ av kommunikationsprotokoll. Detta protokoll använder port 443. <strong>HTTPS</strong> är för krypterad transport av HTTP protokollet.</p>
+      <h4>Exempel på hur datan skickas</h4>
+      <p> HTTP:
+        { Namn: Bobbie Brandson,
+
+        Telefonnummer: 0701234567,
+        
+        Meddelande: Detta är ett meddelande }</p>
+      <p>HTTPS:
+        { HvR_-s+($[B3/BvY$vUbZYrQuK(5!wRw-&MF3,}s6g36}‘Y’!2EmTLw]/whj }</p>
     </div>
-    <!--TODO: Mer bilder???, Mer länkar???, Meta??? OL??? kolla med Herman vad jag saknar!!  -->
+    <!--fluid container Compressed Data-->
+    <div id="compresseddata" style="background-color:lightsteelblue" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="https://docs-assets.developer.apple.com/published/114d850041/3401943c-c259-4bd7-86ab-f62e4ee06c99.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>Vad är Komprimerad Data?</h3>
+      <p>Komprimerad Data är när man har använt till exempel ett program som omkodar och tar bort bitar av låt oss säga en video du vill dela på internet. När sedan den andra personen laddar ner denna videon måste den också ha ett program som avkoda och lägga tillbaka det bitar som tagits bort. Exempel på komprimerade data är en .zip eller .rar fil! </p>
+      <br>
+      <h4>Exempel på Skurlängdskodning (ett sätt att komprimera data)</h4>
+      <p>Antag att vi best&auml;mmer att kodtecknet ska vara 3. Sedan vill vi skurl&auml;ngdskoda f&ouml;ljande data:<br><br>1 2 2 2 2 5 5 5 5 5 5 1 1 1<br><br>Kodningen ger d&aring; utmatning:<br><br>1 3 2 4 3 5 6 3 1 3<br><br>Utmatningen avkodas p&aring; f&ouml;ljande vis:<br><br>Tecknet 1, 1 i avkodningen.<br>Tecknet 3, kodtecknet. H&auml;r b&ouml;rjar en upprepning...<br>...av tecknet 2...<br>...och det upprepas 4 g&aring;nger &ndash; avkodas allts&aring; till 2222.<br> o.s.v</p>
+    </div>
+    <!-- Cdn  fluid container-->
+    <div id="cdn" style="background-color: burlywood" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px;" src="https://scdn1.plesk.com/wp-content/uploads/2019/04/25141138/image11.jpg" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>Vad är CDN?</h3>
+      <p>Med innehållsleveransnätverk (eller <strong>CDN</strong>, enligt engelskans Content Delivery Network) avses geografiskt utspridda nätverk av proxy-servrar och deras datorhallar. Avsikten med dessa nätverk är att tillhandahålla nättjänster nära användare, för ökad driftsäkerhet och prestanda samt minskad latens.</p>
+    </div>
+    <div id="localbootsrap" style="background-color: silver" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px; width: 400px;" src="https://miro.medium.com/max/2625/1*9HanDsRU11ZMsgDGJwN96w.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>Local Bootsrap</h3>
+      <p>Local Bootsrap är när du själv laddar ner Bootsrap på din webserver istället för att ladda in Bootsrap från deras sida. Denna sidan kör Bootsrap lokalt! Bootsrap filerna är alltså nerladda till ./css mappen. </p>
+    </div>
+    <!-- Fluid container jQuery-->
+    <div id="jquery" style="background-color: blueviolet" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px; width: 400px;" src="https://miro.medium.com/max/4400/1*NeKYs9ypQ7jkalNxEX3t9Q.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>jQuery</h3>
+      <p><strong>jQuery</strong> är ett javascript bibilotek som används för att förenkla HTML, DOM, och css modifikation för att snabbare kunna utveckla hemsidor.</p>
+    </div>
+    <!-- Fluid container row col sm, Flexbox och Grid-->
+    <div id="flexboxogrid" style="background-color: lemonchiffon;" class="container-fluid">
+      <div class="row text-white">
+        <div class="bg-info col-sm arvid-padding">
+          <h3>Flexbox</h3>
+          <p>Som man hör på namnet är flexbox till för att på ett flexibelt sätt hantera boxar, såväl deras position som deras storlek - vilket ju är likvärdigt med layout. Det är mycket enklare att få till en bra layout med denna teknik än om man använder sig av float eller liknande äldre metoder.
+
+            Flexboxar är dynamiska och webbläsaren sköter automatiskt det mesta som har att göra med placering av underelement. När man kör på olika enheter eller när man förändrar storlek på webbläsarfönstret så kommer flexbox att förändra layouten så att den passar den aktuella skärmlayouten. </p>
+          <img style="padding-bottom: 35px; width: 520px;" src="https://miro.medium.com/max/5992/1*gaN7h99jHpTAP1ba3AWKng.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+        </div>
+        <div class="bg-primary col-sm arvid-padding">
+          <h3>Grid</h3>
+          <p>Grid är som sagt ett nytt sätt att skapa layouts med CSS. Man kan med detta skapa en ”rutnäts”-baserad layout som byggs upp via kolumner och rader.  Det innebär att man nu kan styla både vertikalt och horisontellt, på ett betydligt enklare sätt. En annan viktig del är att man kan ändra ordningen på sina objekt helt oberoende av ordningen i dokumentobjektmodellen (DOM). Man kan också kombinera Grid med exempelvis Flexbox och float om man skulle vilja.  Sammanfattningsvis kan du, med hjälp av Grid, lättare bygga avancerade layouter.</p>
+          <img style="padding-bottom: 35px; width: 400px;" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8d374c1e-228a-47e8-be5b-10fa1f4d40c8/mrh-css-grid-fig-01-large-opt.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+        </div>
+      </div>
+    </div>
+    <!-- Fluid container jQuery-->
+    <div id="codesnippets" style="background-color: rgb(66, 47, 85)" class="container-fluid text-center text-white arvid-padding">
+      <img style="padding-bottom: 35px; width: 600px;" src="https://weblog.west-wind.com/images/2019/A-Visual-Studio-to-Visual-Studio-Code-Snippet-Converter/VsCodeImportedSnippet.png" alt="ERROR, IMG NOT LOADING CORRECTLY">
+      <h3>Code Snippets</h3>
+      <p style="padding-bottom: 30px;">Code Snippets eller Snippets är en term för en del av kod som är återanvändbar. Det hjälper dig så du inte behöver skriva samma sak flera gånger. (Bilden visar tydligt) </p>
+    </div>
     <!-- Footer med copyright och kazung holdings dsamt mitt namn, fixed-->
     <footer class="bg-dark page-footer fixed-bottom">
-      <div class="footer-copyright text-center py-3 text-success">© 2020 Copyright: Arvid Anderson @
+      <div class="footer-copyright text-center py-3 text-success">© 2020 Copyright: Arvid Anderson <strong>@</strong>
         <a href="https://kazung.se/">Kazung Holdings AB</a>
       </div>
     </footer>
