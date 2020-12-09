@@ -11,14 +11,13 @@ def uppgift1():
     
     ########################################
     print("Inlämmningsuppgift moment04 a")
-    print("Enheter i cm3")
     ########################################
     #Skapat dessa för att inte Visual Studio Code ska jobba sig
     s1 = 0
     s2 = 0
     #Input för heltal 1 och 2
-    s1 = int(input("Ange basen på rektangeln: "))
-    s2 = int(input("Ange höjden på rektangeln: "))
+    s1 = int(input("Ange ena sidan på rektangeln: "))
+    s2 = int(input("Ange andra sidan på rektangeln: "))
     
 
     #Area = b * h
