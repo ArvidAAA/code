@@ -62,7 +62,6 @@ def uppgift1():
 
 
 while True:
-    
     svar = str(input("Vill du utföra en beräkning Y/N: "))
     if svar == "Y":
         uppgift1() 
