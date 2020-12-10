@@ -1,6 +1,9 @@
 #moment04-c
-
 #Arvid Anderson TE19D
+""" Jag har valt att använda mig utav en try och except för att enkelt kunna få en input igen om det inte är ett heltal som är inmatat. If och else
+för att kunna avgöra och ändra om inputen"""
+
+
 
 import subprocess
 import platform
@@ -46,16 +49,27 @@ def uppgift1():
     else:
         print(f"Rektangeln har sidorna {s1} och  {s2}")
         kvadratminne.append("Nej")
+
+    #Uppgift 3
+    while True:
+        try:
+            volymantal = int(input("Mata in höjd"))
+            break
+        except:
+            print("Det är inget heltal! Försök igen")
+    
+    if volymantal < 0:
+        volymantal = 1+1
+    else:
+        pass
+    if volymantal > 10:
+        volymantal = 10+1
+    else:
+        pass
+
     #Formatting
     print('{:^10}'.format('Höjden  Volymen'))
     print('{:^10}'.format('---------------'))
-
-    #C uppgiften
-
-    #FIXA
-    volymantal = int(input("Mata in höjd"))
-    ###FIXA
-
 
     #for loop
     for i in range(1,volymantal):
