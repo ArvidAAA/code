@@ -8,9 +8,9 @@ hej = input("Y/N: ")
 if hej == "Y":
     layout1 = [
     [sg.Text('Please enter your Name, Address, Phone')],
-    [sg.Text('Name 1', size=(15, 1)), sg.InputText()],
-    [sg.Text('Address 1', size=(15, 1)), sg.InputText()],
-    [sg.Text('Phone 1', size=(15, 1)), sg.InputText()],
+    [sg.Text('Name 1', size=(25, 1)), sg.InputText()],
+    [sg.Text('Address 1', size=(25, 1)), sg.InputText()],
+    [sg.Text('Phone 1', size=(25, 1)), sg.InputText()],
     [sg.Submit(), sg.Cancel()]
 ]
 
