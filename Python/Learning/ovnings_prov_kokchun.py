@@ -92,7 +92,7 @@ def uppgift_8(summa):
 
 
 def uppgift_9():
-    #Comebakk, svårt att se vad man ska göra
+    #
 
 def uppgift_10():
     #Blackjack most important pop, shuffle from random
