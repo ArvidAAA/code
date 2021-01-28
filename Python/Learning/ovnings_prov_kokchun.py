@@ -9,7 +9,6 @@ def uppgift_1():
         birds /= 2
         print(f"˚Ar {year}: antal fåaglar: {birds:.0f}")
 
-
 """ Medans fåglarna är mer än 800 så fortsätter 
 while loopen och den lägger till ett år och halverar antalet fåglar samt printar ut för varje gång loopen hur många fåglar som finns kvar varje år och fåglar"""
 
@@ -92,7 +91,9 @@ def uppgift_8(summa):
 
 
 def uppgift_9():
+    pass
     #
 
 def uppgift_10():
+    pass
     #Blackjack most important pop, shuffle from random
